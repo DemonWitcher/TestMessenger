@@ -24,6 +24,10 @@ public class AIDLActivity extends AppCompatActivity {
      * aidl in out inout oneway OK
      * aidl 回调  OK
      * aidl 有返回值的不阻塞 用回调就行 回调在子线程里 OK
+     *
+     * 主进程的主线程 调用子进程的子线程 阻塞UI吗？ 阻塞
+     * 怎么才能不阻塞  用Oneway
+     * 但是oneway不能带返回值 怎么带返回值 用回调
      */
 
     @BindView(R.id.bind)
